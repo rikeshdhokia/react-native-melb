@@ -3,8 +3,9 @@ import {
   Text, View, Image
 } from 'react-native';
 import MovieBoard from './resources/movieBoardImg.jpg';
+import MovieList from './components/MovieList';
 
-const App = () => (
+const Home = () => (
   <View style={styles.home}>
       <View style={styles.header}>
         <Text style={styles.headerText}>
@@ -12,14 +13,18 @@ const App = () => (
         </Text>
       </View>
       <View style={styles.homeContent}>
-
         <Text>
           What movie should we watch tonight?
         </Text>
         <Image style={styles.image} source={MovieBoard} />
-
+      </View>
+      <View>
+        <MovieList />
       </View>
   </View>
+);
+const App = () => (
+  <Home />
 );
 
 const styles = {
