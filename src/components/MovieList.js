@@ -10,7 +10,11 @@ const MovieList = () => (
          data={moviesData.results}
          keyExtractor={(item) => item.id}
          renderItem={({ item }) =>
-          <MovieListItem name={item.title} />
+          <MovieListItem
+            title={item.title}
+            posterPath={item.poster_path}
+            voteAverage={item.vote_average}
+          />
         }
        />
    </View>
