@@ -18,7 +18,7 @@ const styles = {
   },
   header: {
     backgroundColor: '#F8F8F8',
-    height: 60,
+    height: 40,
     justifyContent: 'center',
     alignItems: 'center',
     paddingTop: 15,

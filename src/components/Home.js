@@ -14,7 +14,7 @@ const Home = () => (
       </Text>
       <Image style={styles.image} source={MovieBoard} />
     </View>
-    <View>
+    <View style={styles.movieList}>
       <MovieList />
     </View>
   </View>
@@ -22,7 +22,7 @@ const Home = () => (
 
 const styles = {
   home: {
-    flex: 1,
+    flex: 1
   },
   image: {
     width: '30%',
@@ -31,9 +31,12 @@ const styles = {
 
   },
   homeContent: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  movieList: {
+    flex: 3
   }
 };
 
